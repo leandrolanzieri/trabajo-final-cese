@@ -53,9 +53,13 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{float}
+\usepackage{longtable}
 
 %------------------------
 \usepackage{listings}
+\usepackage{makecell}
+
 
 %\usepackage[hyphens]{url}
 %\usepackage[hidelinks]{hyperref}
@@ -86,7 +90,7 @@ headsepline, % Uncomment to get a line under the header
 %	INFORMACIÓN DE LA MEMORIA
 %----------------------------------------------------------------------------------------
 
-\thesistitle{CIAABOT: Robótica educativa abierta sobre CIAA} % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
+\thesistitle{CIAABOT: Robótica educativa abierta basada en la CIAA} % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
 \supervisor{Ing. Eric Pernía} % El nombre del director, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \supname
 \degree{Especialista en Sistemas Embebidos } % Nombre del grado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
 \author{Ing. Leandro Lanzieri Rodríguez} % Tu nombre, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \authorname
@@ -114,7 +118,7 @@ headsepline, % Uncomment to get a line under the header
 \newcaptionname{spanish}{\abbrevname}{Glosario}
 \newcaptionname{spanish}{\byname}{por}
 
-\renewcommand{\lstlistingname}{Algoritmo}% Listing -> Algorithm
+\renewcommand{\lstlistingname}{Código}% Listing -> Algorithm
 \renewcommand{\lstlistlistingname}{Índice de \lstlistingname s}% List of Listings -> List of Algorithms
 
 \renewcommand{\listtablename}{Índice de Tablas}
@@ -164,7 +168,7 @@ Jurados:\\
 \jurtresname
  
 \vfill
-\textit{Este trabajo fue realizado en las Ciudad Autónoma de Buenos Aires, entre \fechaINICIOname \hspace{1px} y \fechaFINALname.}
+\textit{Este trabajo fue realizado en las Ciudad Autónoma de Buenos Aires entre \fechaINICIOname \hspace{1px} y \fechaFINALname.}
 \end{center}
 \end{titlepage}
 
@@ -179,7 +183,7 @@ Jurados:\\
 %The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
 \centering
 
-En la presente memoria se describe el desarrollo de CIAABOT, una plataforma libre de robótica educativa que funciona sobre la CIAA.  El objetivo es facilitar la enseñanza de materias básicas y programación en escuelas, utilizando la robótica como herramienta. Para esto se desarrolló una interfaz de programación gráfica, para reducir la dificultad de una sintaxis específica.
+En la presente memoria se describe el desarrollo de CIAABOT, una plataforma libre de robótica educativa que funciona sobre la CIAA.  El objetivo es facilitar la enseñanza de materias básicas y programación en escuelas, utilizando la robótica como herramienta. Para esto se desarrolló una interfaz de programación gráfica, para reducir la dificultad la sintaxis.
 
 Para cumplir con los objetivos planteados se aplicaron técnicas de programación como división de responsabilidades por capas,  modularización y servicios. También se utilizaron herramientas de desarrollo, entre ellas control de versiones, debug y testing. Se aplicaron a su vez conocimientos adquiridos en la especialización de diseño de PCB y gestión de proyectos.
 
@@ -240,9 +244,9 @@ A todos ellos, muchas gracias.
 
 \include{Chapters/Chapter1}
 \include{Chapters/Chapter2} 
-%\include{Chapters/Chapter3}
-%\include{Chapters/Chapter4} 
-%\include{Chapters/Chapter5} 
+\include{Chapters/Chapter3}
+\include{Chapters/Chapter4} 
+\include{Chapters/Chapter5} 
 
 %----------------------------------------------------------------------------------------
 %	CONTENIDO DE LA MEMORIA  - APÉNDICES

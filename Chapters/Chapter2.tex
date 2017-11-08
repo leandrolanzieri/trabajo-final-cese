@@ -1,11 +1,11 @@
 \chapter{Introducción Específica} % Main chapter title
 
 \label{Chapter2}
-En este capítulo se presenta CIAABOT con más detalle, incluyendo especificaciones técnicas sobre la plataforma utilizada. Se establecen los requerimientos planteados y la planificación para el desarrollo del trabajo.
+En este capítulo se presenta CIAABOT con más detalle, incluyendo especificaciones técnicas sobre la plataforma utilizada, se establecen los requerimientos planteados y la planificación para el desarrollo del trabajo.
 
 \section{CIAABOT: Partes componentes}
 \label{sec:ciaabot:partes}
-Se planteó que para lograr los objetivos propuestos, la plataforma debería estar formada por tres partes fundamentales, que funcionarían complementadas para armar un ecosistema CIAABOT, como está esquematizado en la figura \ref{fig:ciaabot:partes}. A continuación se describirá cada uno de ellos.
+Se planteó que para lograr los objetivos propuestos, la plataforma debería estar formada por tres partes fundamentales, que funcionen complementadas para armar un ecosistema CIAABOT, como se esquematiza en la figura \ref{fig:ciaabot:partes}. A continuación se describirá cada una de estas partes.
 
 \begin{center}
     \includegraphics[scale=.8]{./Figures/ciaabot-partes.pdf}
@@ -16,11 +16,11 @@ Se planteó que para lograr los objetivos propuestos, la plataforma debería est
 
 \subsection{Entorno de desarrollo integrado}
 \label{subsec:ide}
-Un IDE (\emph{Integrated Development Environment}, Entorno de Desarrollo Integrado) es un software que incluye varias herramientas para asistir a los desarrolladores con su trabajo. Generalmente incluye algún editor para el código, herramientas de construcción o compilación automáticas, programación de la plataforma y posible depuración.
+Un IDE (\emph{Integrated Development Environment}, Entorno de Desarrollo Integrado) es un software que incluye varias herramientas para asistir a los desarrolladores con su trabajo. Generalmente incluye algún editor para el código, herramientas de construcción o compilación automáticas, programación de la plataforma y depuración.
 
-El CIAABOT-IDE es el centro del trabajo de los usuarios. Aquí plasman sus ideas y soluciones a problemas planteados. Esto lo hacen por medio de un editor de código en el que utilizan bloques predefinidos y no texto, como se observa en la figura \ref{fig:ciaabot:ide}. Arrastrando e interconectando los mismos logran definir la lógica para su programa.
+El CIAABOT-IDE es el centro del trabajo de los usuarios, donde plasman sus ideas y soluciones a problemas. Esto lo hacen por medio de un editor de código en el que utilizan bloques predefinidos y no texto, como se observa en la figura \ref{fig:ciaabot:ide}. Arrastrando e interconectando los mismos logran definir la lógica para su programa.
 
-Una opción interesante para remarcar es la salida de código en C. Cada vez que se modifica el diagrama de bloques, el código en C producido se modifica en tiempo real. Esto es muy útil para gente que pretende aprender a programar en C, ya que ve de manera directa cómo afecta cada bloque a las líneas de código y puede apreciar las equivalencias.
+Una opción interesante para remarcar es la salida de código en C. Cada vez que se modifica el diagrama de bloques, el código en C producido se modifica en tiempo real. Esto es muy útil para aquellos que pretenden aprender a programar en C, ya que ven de manera directa cómo afecta cada bloque a las líneas de código y pueden apreciar las equivalencias.
 
 La plataforma también permite compilar y luego descargar el código generado en la placa solamente conectándola por USB.
 
@@ -41,7 +41,7 @@ Los robots que funcionen bajo esta plataforma serán denominados \emph{CIAABOTS}
 
 De esta manera es posible enviar los archivos para imprimirlos en cualquier escuela que cuente con este sistema de impresión para replicarlo. Sólo sería necesario tener la placa CIAA correspondiente al modelo, armar el poncho (de diseño abierto) y adquirir en algún lugar de conveniencia los actuadores o sensores particulares del CIAABOT (motores DC, sensores IR, ultrasonido, etc.).
 
-El diseño del poncho para el primer modelo de CIAABOT, el G1 se puede encontrar en github \citep{CIAABOT:G1}, realizado con el suite KiCad como todos los diseños relacionados al proyecto CIAA.
+El diseño del poncho para el primer modelo de CIAABOT, el G1 se puede encontrar en github \citep{CIAABOT:G1}, realizado con KiCad, como todos los diseños relacionados al proyecto CIAA.
 
 \subsection{Firmware}
 \label{subsec:firmware}
@@ -53,23 +53,23 @@ Juntando varias funciones de la sAPI es posible armar funciones más complejas d
 
 Se prevé que con el avance del desarrollo de la plataforma cada modelo tendrá bloques específicos que estarán disponibles en el editor, cuando se lo seleccione a la hora de armar el proyecto en el IDE. Así, podrían armarse bloques que realicen por ejemplo una lectura de un sensor, que implicaría el manejo de pines y tiempos de espera.
 
-\section{Plataforma utilizada}
+\section{Plataforma CIAA}
 \label{sec:plataforma}
-Como base para el proyecto se optó por utilizar CIAA. Es un proyecto centrado en el trabajo colaborativo que busca la innovación para crear, diseñar y desarrollar soluciones electrónicas en la industria. Dentro de sus objetivos se encuentran:
+Como base para el proyecto se optó por utilizar CIAA. Es un proyecto centrado en el trabajo colaborativo que busca la innovación para crear, diseñar y desarrollar soluciones electrónicas en la industria. Dentro de sus objetivos se encuentran \citep{CIAA:wiki}:
 
 \begin{itemize}
 \item Impulsar el desarrollo tecnológico nacional, a partir de sumar valor agregado al trabajo y a los productos y servicios, mediante el uso de sistemas electrónicos, en el marco de la vinculación de las instituciones educativas y el sistema científico-tecnológico con la industria.
 
 \item Darle visibilidad positiva a la electrónica argentina.
 
-\item Generar cambios estructurales en la forma en la que se desarrollan y utilizan en nuestro país los conocimientos en el ámbito de la electrónica y de las instituciones y empresas que hacen uso de ella. \citep{CIAA:wiki}
+\item Generar cambios estructurales en la forma en la que se desarrollan y utilizan en nuestro país los conocimientos en el ámbito de la electrónica y de las instituciones y empresas que hacen uso de ella.
 \end{itemize}
 
 Se utiliza esta plataforma por compartir la misma idea de ser un proyecto libre, poseer una creciente comunidad e incentivar la industria nacional. Se consideró que es un proyecto suficientemente maduro y con actualizaciones y desarrollos constantes como para ser utilizado de base.
 
 \subsection{EDU-CIAA-NXP}
 \label{subsec:eduCiaaNxp}
-La EDU-CIAA-NXP es la versión educativa y de bajo costo de la CIAA-NXP. Utiliza, al igual que la CIAA-NXP, el microcontrolador LPC4337 de NXP, un doble núcleo ARM Cortex-M4F y Cortex M0. Como se observa en la figura \ref{fig:eduCiaaNxp}, la placa posee 4 leds y 4 pulsadores de hardware adicional. Para ampliar sus capacidades se utilizan los conectores laterales, para adicionar alguna placa extensora llamada \emph{Poncho}.
+La EDU-CIAA-NXP es la versión educativa y de bajo costo de la CIAA-NXP. Utiliza, al igual que la CIAA-NXP, el microcontrolador LPC4337 de NXP, un doble núcleo ARM Cortex-M4F y Cortex M0. Como se observa en la figura \ref{fig:eduCiaaNxp}, la placa posee 4 leds y 4 pulsadores de hardware adicional. Para ampliar sus capacidades se utilizan los conectores laterales, para adicionar un \emph{Poncho}, o placa expansora.
 
 \begin{figure}[h]
 \centering
@@ -78,36 +78,36 @@ La EDU-CIAA-NXP es la versión educativa y de bajo costo de la CIAA-NXP. Utiliza
 \label{fig:eduCiaaNxp}
 \end{figure}
 
-Permite realizar programación y debugging, así como también acceder a una de sus UARTs, por medio de USB. Además posee otro puerto para que la placa funcione en modo OTG (\emph{On The Go}).
+La EDU-CIAA-NXP permite realizar programación y debugging, así como también acceder a una de sus UARTs, por medio de USB. Además posee otro puerto para que la placa funcione en modo OTG (\emph{On The Go}).
 
 \section{Requerimientos}
 \label{sec:requerimientos}
-Se plantearon requerimientos que el proyecto debería cumplir a la hora de ser entregado. Se evaluaron sus posibilidades y se clasificaron en categorías.
+Se plantearon requerimientos que el proyecto debe cumplir a la hora de ser entregado. Se evaluaron sus posibilidades y se clasificaron en categorías.
 
 \subsection{Requerimientos del sistema}
 \label{subsec:requerimientosSistema}
-Se estableció que el IDE debería poder ejecutarse como mínimo en un entorno Linux o Windows. Por la orientación didáctica del proyecto su uso debería ser simple, amigable y didáctico. Además, la programación debería poder realizarse íntegramente de manera gráfica por medio de bloques, donde cada uno represente acciones simples.
+Se estableció que el IDE debe poder ejecutarse como mínimo en un entorno Linux o Windows. Por la orientación didáctica del proyecto su uso debe ser simple, amigable y didáctico. Además, la programación debe poder realizarse íntegramente de manera gráfica por medio de bloques, donde cada uno represente acciones simples.
 
-El IDE debería permitir un manejo de proyectos en forma de archivos, que posibilitaran el guardado y distribución de los mismos. Dentro de las opciones del proyecto debería poder seleccionarse el modelo de CIAABOT utilizado. Actualmente la opción existe, pero hay un solo modelo disponible.
+El IDE permite un manejo de proyectos en forma de archivos, que posibilitan el guardado y distribución de los mismos. Dentro de las opciones del proyecto se puede seleccionar el modelo de CIAABOT utilizado. Actualmente la opción existe, pero hay un solo modelo disponible.
 
-El algoritmo que se genera a partir de los bloques debería estar disponible en lenguaje C, poder compilarse y programarse desde la aplicación, por puerto USB.
+El algoritmo que se genera a partir de los bloques está disponible en lenguaje C, para poder compilar y programar desde la aplicación, por un puerto USB.
 
 \subsection{Componentes del Sistema}
 \label{subsec:componentesSistema}
-Como ya se mencionó, se debería utilizar en principio la placa EDU-CIAA-NXP, y un poncho si fuese necesario para controlar la maqueta o robot implementado para la muestra. En el diseño de este poncho todos los periféricos deberían funcionar independientes al resto.
+Como ya se mencionó en \ref{subsec:eduCiaaNxp}, se utilizará en principio la placa EDU-CIAA-NXP, y un poncho si es necesario para controlar la maqueta o robot implementado para la muestra. En el diseño de este poncho todos los periféricos deben funcionar independientes al resto.
 
 \subsection{Firmware}
 \label{subsec:firmware}
-Para el desarrollo del software se implementaría un sistema de control de versiones. Para la programación de los robots se utilizarían dos bibliotecas: En C la mencionada sAPI, y una de Firmata para un monitoreo del mismo por medio del puerto serie, con un cliente corriendo en la placa.
+Para el desarrollo del software se implementó un sistema de control de versiones. Para la programación de los robots se utilizaron dos bibliotecas: En C la mencionada sAPI, y una de Firmata para un monitoreo del mismo por medio del puerto serie, con un cliente corriendo en la placa.
 
 \subsection{Procesos Finales}
 \label{subsec:procesosFinales}
-Se requiere un manual de uso e instalación, junto con ejemplos básicos y funcionales, que sean representativos de las características de la plataforma. Se implementaría sobre una maqueta o robot adaptado a la EDU-CIAA, y con ello se evaluarían los resultados del proyecto y su aplicación en ámbitos de enseñanza reales.
+Se requiere un manual de uso e instalación, junto con ejemplos básicos y funcionales, que sean representativos de las características de la plataforma. Se implementó sobre una maqueta adaptada a la EDU-CIAA, y con ello se evaluaron los resultados del proyecto y su aplicación en ámbitos de enseñanza reales.
 
 \section{Planificación}
 \label{sec:planificacion}
 \subsection{Desglose en tareas}
-En primer lugar, para definir objetivos concretos, se planteó una serie de entregables para el proyecto:
+En primer lugar, para definir objetivos concretos, se plantearon una serie de entregables para el proyecto:
 
 \begin{itemize}
 \item IDE en funcionamiento.
@@ -130,3 +130,34 @@ Siguiendo los lineamientos de las estrategias vistas en la materia Gestión de P
 \item Integración del sistema (50 hs.).
 \item Procesos finales (120 hs.).
 \end{itemize}
+
+\subsection{Activity On-node}
+Si se toman las tareas antes descriptas y se evalúan sus dependencias, es decir las tareas que deben estar finalizadas antes de poder a realizarlas, se puede armar un diagrama denominado \emph{Activity on-node}. En la figura \ref{fig:activity-node} se pueden observar las tareas propuestas junto con el tiempo estimado en días para cada tarea. Todas las flechas entrantes a un nodo o tarea son las dependencias de la misma.
+
+\begin{center}
+    \includegraphics[scale=.5]{./Figures/activity-on-node.pdf}
+    \captionof{figure}{Diagrama \emph{Activity on-node}}
+    \label{fig:activity-node}
+\end{center}
+
+
+Los días están expresados en días laborales de aproximadamente 3 horas. Evaluando las duraciones y precedencias de las tareas, la sucesión que presente la mayor cantidad de horas es llamada \emph{camino crítico}. 
+
+En la planificación de un proyecto es importante su identificación, ya que cualquier tarea que se encuentre sobre él tiene lo que se llama flotación cero. Esto significa que un incremento en su duración llevará indefectiblemente a una dilatación del plazo de finalización del proyecto. En el diagrama este camino está resaltado con flechas más gruesas.
+
+\subsection{Diagrama de Gantt}
+Si se establecen fechas concretas para los inicios de las tareas, teniendo en cuenta su duración y precedencias, se puede armar el llamado diagrama de Gantt. Esto da una referencia rápida de dónde se debería encontrar el desarrollo del proyecto según la planificación inicial en cada momento dado. En las figuras \ref{fig:gantt-1} y \ref{fig:gantt-2} se puede observar el diagrama para este proyecto.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.5]{./Figures/gantt-1.jpg}
+\caption{Diagrama de Gantt - Parte 1.}
+\label{fig:gantt-1}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=.7]{./Figures/gantt-2.jpg}
+\caption{Diagrama de Gantt - Parte 2.}
+\label{fig:gantt-2}
+\end{figure}

@@ -19,15 +19,15 @@
 %\section{Introducción}
 
 %----------------------------------------------------------------------------------------
-Aquí se exponen las problemáticas observadas que originaron el desarrollo del presente trabajo, junto con una breve descripción de la plataforma planteada para solucionarlas.
+En este capítulo se exponen las problemáticas observadas que originaron el desarrollo del presente trabajo, junto con una breve descripción de la plataforma propuesta para solucionarlas.
 \section{Motivación}
 \label{sec:motivacion}
-Se observaron procesos de enseñanza, tanto en escuelas como en cursos de programación de sistemas embebidos. Se detectó que un gran obstáculo común entre alumnos es aprender en conjunto la lógica para resolución de problemas utilizando algoritmos, y la sintaxis de un lenguaje específico.
+En la constante búsqueda de mejorar la experiencia de los alumnos, docentes de los Cursos Abiertos de Programación de Sistemas Embebidos (CAPSE) realizaron evaluaciones sobre los procesos de enseñanza y sus resultados. A raíz de esto se detectó que un gran obstáculo común entre los alumnos es aprender en conjunto la lógica para resolución de problemas utilizando algoritmos, y la sintaxis de un lenguaje de programación. En función de esto se propuso una plataforma que redujera la problemática de la sintaxis.
 % Escuelas
 \subsection{Robótica en la educación}
 En el último tiempo se ha extendido cada vez más el uso de la robótica educativa como una herramienta particularmente útil en ámbitos escolares. Es utilizada como un sistema de enseñanza multidisciplinaria, que potencia el desarrollo de habilidades en las áreas de ciencias, tecnología, ingeniería y matemáticas. Correctamente estructurada, la robótica educativa permite incentivar el trabajo en equipo, el liderazgo, el emprendimiento y el aprendizaje a partir los errores.
 
-La robótica en las escuelas se presenta entonces como una opción tecnológica e innovadora de afrontar la problemática de capturar el interés de los alumnos en los temas propuestos en la currícula. Esto se debe a la necesidad de involucrarse y trabajar en conjunto con sus pares para la resolución de problemas donde deben aplicar los conocimientos de las diferentes asignaturas. Al realizarse de manera entretenida los contenidos se fijan de manera más simple y natural.
+La robótica en las escuelas se presenta entonces como una opción tecnológica e innovadora para afrontar la problemática de capturar el interés de los alumnos en los temas propuestos en la currícula. Esto se debe a la necesidad de involucrarse y trabajar en conjunto con sus pares para la resolución de problemas donde deben aplicar los conocimientos de las diferentes asignaturas. Al realizarse de manera entretenida los contenidos se fijan de manera más simple y natural.
 
 Sin embargo, a la hora de aplicar estas técnicas de enseñanza se presenta una problemática. En el ambiente de las escuelas  primarias el público son estudiantes jóvenes en proceso de formación, que en general no poseen conocimientos técnicos en detalle como electrónica o manejo de lenguajes de programación. Esto se traduce en una limitación y dificultad a la hora de acercarse a este tipo de tecnologías, aunque el objetivo final no sea el aprendizaje de la robótica en sí misma sino utilizarla \textit{como herramienta}.
 
@@ -39,28 +39,28 @@ Los primeros pasos para la inserción en el ámbito de la programación de siste
 
 Una de las mayores dificultades a la hora de iniciarse en la programación, de sistemas embebidos o en general, es la sintaxis específica del lenguaje que debe ser utilizado. Esto se evidencia a la hora de expresar en código la idea que se tiene, es decir la lógica del programa que se está desarrollando.
 
-Una opción que presenta una curva de aprendizaje más plana es abstraerse, por lo menos en una primera etapa, del lenguaje que se utilizará para programar más adelante. De esta manera el alumno puede concentrarse en definir la lógica de su solución propuesta al problema planteado, sin preocuparse en cómo se expresaría en código (dicha tarea queda para etapas posteriores del proceso de aprendizaje).
+Una opción que presenta una curva de aprendizaje más plana es abstraerse, por lo menos en una primera etapa, del lenguaje que se utilizará para programar más adelante. De esta manera el alumno puede concentrarse en definir la lógica de su solución propuesta al problema planteado, sin preocuparse en cómo se expresaría en código (dicha tarea queda para etapas posteriores del proceso de aprendizaje). Esta última tarea queda para etapas posteriores del proceso de aprendizaje.
 %----------------------------------------------------------------------------------------
 
 \section{CIAABOT: Lineamientos principales}
 \label{sec:ciaabot:lineamientos}
 % Aca se hace una descripcion de ciaabot sin entrar en detalles de las partes. Pero si explicando como es que soluciona el problema planteado en la seccion de motivacion.
-CIAABOT se presenta como una plataforma abierta orientada a la robótica educativa, es decir utilizada como una herramienta para la educación, con el fin de suplir las necesidades identificadas en la sección \ref{sec:motivacion}. A la hora de darle forma a este proyecto se plantearon unos lineamientos general que debía cumplir, más allá de los alcances a nivel técnico. A continuación se dará una breve descripción y se justificará cada uno de ellos.
+CIAABOT se presenta como una plataforma abierta orientada a la robótica educativa, es decir utilizada como una herramienta para la educación, con el fin de suplir las necesidades identificadas en la sección \ref{sec:motivacion}. A la hora de darle forma a este proyecto se plantearon lineamientos generales que debía cumplir, más allá de los alcances a nivel técnico. A continuación se da una breve descripción y se justifica cada uno de ellos.
 
 \subsection{Software y Hardware libres}
 \label{subsec:sotwareLibre}
 La \emph{cultura libre} es una corriente o movimiento que, en contraposición a las medidas restrictivas de los derechos de autor, promueve la libertad para distribuir y modificar trabajos.
 
-Esta ideología aplicada al software se traduce en código que es libera bajo alguna de las licencias libres (por ejemplo BSD, GPL o MIT), lo que implica ciertas libertades a la hora de utilizarlo, modificarlo y distribuirlo. En general, aunque depende de la licencia elegida, se libera el código fuente de manera gratuita (aunque esto último no es condición obligatoria) y los usuarios pueden verlo o modificarlo.
+Esta ideología aplicada al software se traduce en código que se libera bajo alguna de las licencias libres (por ejemplo BSD \citep{BSD}, GPL \citep{GPLv3} o MIT \citep{MIT}), lo que implica ciertas libertades a la hora de utilizarlo, modificarlo y distribuirlo. En general, aunque depende de la licencia elegida, se libera el código fuente de manera gratuita (aunque esto último no es condición obligatoria) y los usuarios pueden verlo o modificarlo.
 
 Cuando se trata de hardware, la idea de un diseño libre se traduce en la liberación bajo alguna licencia de especificaciones, diagramas esquemáticos, diseños de circuitos impresos, memorias de cálculo y cualquier otro documento accesorio de interés para el funcionamiento del sistema. Que el hardware sea libre no implica necesariamente que se pueda adquirir físicamente de manera gratuita, ya que el la fabricación y armado suponen un costo. 
 
-La ventaja principal por la que se optó que el proyecto sea libre, tanto en hardware como en software, es que los interesados pueden descargar esquemáticos o código fuente respectivamente y armar sus circuitos o compilar sus programas, junto con cualquier modificación que crean conveniente. Particularmente el software de CIAABOT se liberó con la licencia GNU GPLv3 \citep{GPLv3}. Esto implica, entre otras cosas, que cualquier modificación o utilización del mismo debe liberarse bajo la misma licencia.
+La ventaja principal por la que se optó que el proyecto sea libre, tanto en hardware como en software, es que los interesados pueden descargar esquemáticos o código fuente respectivamente y armar sus circuitos o compilar sus programas, junto con cualquier modificación que crean conveniente. Particularmente el software de CIAABOT se liberó con la licencia GNU GPLv3. Esto implica, entre otras cosas, que cualquier modificación o utilización del mismo debe liberarse bajo la misma licencia.
 
 
 \subsection{Orientación a la enseñanza}
 \label{subsec:orientacion}
-Como se describió en la sección \ref{sec:motivacion} la robótica como herramienta para promover el aprendizaje de materias básicas, lógica y programación está ganando terreno. Es por esto que CIAABOT se desarrolló con el objetivo de ser utilizado para introducirse a la programación de sistemas embebidos de manera fácil y didáctica. Permitiendo de esta manera a docentes, alumnos de escuelas o entusiastas que deseen iniciarse en la programación de embebidos, un posibilidad simplificada sin la complicación de encontrarse con una complicada sintaxis.
+Como se describió en la sección \ref{sec:motivacion} la robótica como herramienta para promover el aprendizaje de materias básicas, lógica y programación está ganando terreno. Es por esto que CIAABOT se desarrolló con el objetivo de ser utilizado para introducirse a la programación de sistemas embebidos de manera fácil y didáctica, permitiendo de esta manera a docentes, alumnos de escuelas o entusiastas que deseen iniciarse en la programación de embebidos, un posibilidad simplificada sin la complicación de encontrarse con una complicada sintaxis.
 
 Teniendo en mente este lineamiento, se analizó el armado del DSL (\emph{Domain-Specific Language}, Lenguaje de Dominio Específico) para que fuera natural su uso, como si es estuviera escribiendo el algoritmo con palabras. 
 
@@ -74,20 +74,20 @@ Al seguir esta idea de poner al usuario en el centro, CIAABOT posee documentaci�
 
 \subsection{Escalabilidad}
 \label{subsec:escalabilidad}
-CIAABOT está basada en la plataforma de CIAA \citep{CIAA}(Computadora Industrial Abierta Argentina). Actualmente funciona sobre la placa EDU-CIAA-NXP, una versión educativa y reducida de la CIAA-NXP pensada para la educación y la formación en sistemas embebidos. El proyecto CIAA presenta una gran dinámica, con la liberación de herramientas nuevas, actualizaciones y hasta placas nuevas. 
+CIAABOT está basada en la plataforma de CIAA (Computadora Industrial Abierta Argentina) \citep{CIAA}. Actualmente funciona sobre la placa EDU-CIAA-NXP, una versión educativa y reducida de la CIAA-NXP pensada para la educación y la formación en sistemas embebidos. El proyecto CIAA presenta una gran dinámica, con la liberación de herramientas nuevas, actualizaciones y hasta placas nuevas. 
 
-Un ejemplo de esto es la reciente placa CIAA Z3R0 \citep{CIAA:z3r0}. Esta placa utiliza el microcontrolador EFM32HG de Silicon Labs, y tiene como objetivo un muy bajo consumo de energía, simplicidad y pequeño tamaño. Está pensada para aplicaciones en robótica e IoT (\emph{Internet of Things}, Internet de la cosas).
+Un ejemplo de esto es la reciente placa CIAA Z3R0. Esta placa utiliza el microcontrolador EFM32HG de Silicon Labs, y tiene como objetivo un muy bajo consumo de energía, simplicidad y pequeño tamaño. Está pensada para aplicaciones en robótica e IoT (\emph{Internet of Things}, Internet de la cosas).
 
 Debido a esto, se pensó CIAABOT como una plataforma que pueda adaptarse a estos cambios. Internamente las placas soportadas del ecosistema CIAA tienen una definición de capacidades y pines disponibles, donde se pueden adicionar placas nuevas a medida que aparezcan.
 
-Además, como se explicar en la sección \ref{sec:ciaabot:partes}, CIAABOT pretende tener varios modelos de robots que funcionen con la plataforma, y que puedan basarse en diferentes placas del proyecto CIAA.
+Además, como se explica en la sección \ref{sec:ciaabot:partes}, CIAABOT pretende tener varios modelos de robots que funcionen con la plataforma, y que puedan basarse en diferentes placas del proyecto CIAA.
 
 \section{Alcance y Objetivos planteados}
 \label{sec:alcance}
-El objetivo principal fue desarrollar el entorno de desarrollo y programación para CIAABOT, junto con firmware específico que se requiera, basándose en bibliotecas existentes para la CIAA (por ejemplo sAPI). Además, la implementación y uso de lo anterior en un robot o maqueta existente adaptado para utilizar la EDU-CIAA-NXP. Esto se hace para demostrar las funcionalidades que se proveen. Para esto también se consideró el armado se todo el hardware adicional necesario.
+El objetivo principal fue desarrollar el entorno de desarrollo y programación para CIAABOT, junto con firmware específico que se requiera, basándose en bibliotecas existentes para la CIAA (por ejemplo sAPI). Además, se planteó la implementación y uso de lo anterior en un robot o maqueta existente adaptado para utilizar la EDU-CIAA-NXP. Esto se hizo para demostrar las funcionalidades que se proveen. Para esto también se consideró el armado se todo el hardware adicional necesario.
 
-Se busca que el proyecto sea utilizado para la enseñanza de programación de sistemas embebidos, apuntando principalmente a la robótica.
+Se buscó que el proyecto sea utilizado para la enseñanza de programación de sistemas embebidos, apuntando principalmente a la robótica.
 
-En el contexto del trabajo de especialización, se restringió el alcance por una cuestión de tiempo. Se resolvió que el desarrollo incluiría la aplicación de escritorio, que permitiera la programación gráfica de los algoritmos, utilizando bloques. Además debería traducir estos bloques a lenguaje C. Por último, se planteó que se utilizaría el protocolo Firmata para un monitoreo en tiempo real del estado de la placa cuando se desarrolla conectado a la PC.
+En el contexto del trabajo de especialización, se restringió el alcance por una cuestión de tiempo. Se resolvió que el desarrollo incluya la aplicación de escritorio, que permita la programación gráfica de los algoritmos, utilizando bloques. Además debe traducir estos bloques a lenguaje C. Por último, se planteó que se utilizara el protocolo Firmata para un monitoreo en tiempo real del estado de la placa cuando se desarrolla conectado a la PC.
 
 \emph{No} se incluyó en el desarrollo de un modelo específico de CIAABOT.
